@@ -3,6 +3,7 @@ __pycache__/ravenscout.cpython-37.pyc
 __pycache__/app.cpython-37.pyc
 __pycache__/config.cpython-37.pyc
 node_modules
+migrations
 *.pyc
 *.map
 *.flow

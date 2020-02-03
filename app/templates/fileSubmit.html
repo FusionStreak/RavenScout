@@ -9,12 +9,24 @@
             {{ form.name(size=32) }}
         </p>
         <p>
+            {{ form.email.label }}<br>
+            {{ form.email(size=32) }}
+        </p>
+        <p>
             {{ form.team.label }}<br>
             {{ form.team(size=32) }}
         </p>
         <p>
+            {{ form.event.label }}<br>
+            {{ form.event(size=32) }}
+        </p>
+        <p>
             {{ form.file.label }}<br>
             {{ form.file(size=32) }}
+        </p>
+        <p>
+            {{ form.season.label }}<br>
+            {{ form.season }}
         </p>
         <p>{{ form.submit() }}</p>
     </form>
