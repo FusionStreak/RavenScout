@@ -7,12 +7,6 @@
 * All original files are stored for human review in the case of errors
 * Pulls some data from FMS/TheBlueAlliance
 * Each new Year/Season a new standard for CSV files will have to be released and the application will be updated
-* Suggestions are welcome(Sayfullaheid@gmail.com)
-
-### Project By:
-* Sayfullah Eid @FusionStreak
-* Alumni of [FRC](https://www.firstinspires.org/robotics/frc) team [4783](https://www.thebluealliance.com/team/4783) [RoboRavens](https://www.roboravens.ca)
-* Coding enthusiast
 
 ## TODO
 * Connect file submission to DB
