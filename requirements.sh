@@ -3,4 +3,4 @@ pip install flask-wtf
 pip install flask-sqlalchemy
 npm install bootstrap
 npm install jquery
-npm install popperjs/core
+npm install @popperjs/core
