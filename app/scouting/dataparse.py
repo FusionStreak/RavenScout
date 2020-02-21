@@ -2,9 +2,17 @@
 
 import pandas as pd
 import numpy as np
-import app.scouting.deepspace as ds
-import app.scouting.infiniterecharge as ir
+import deepspace as ds
+import infiniterecharge as ir
 
-def parseData(csvFile, year, event):
+season = {
+    2019 : ds.generate_data,
+    2020 : ir.generate_data
+}
+
+def parseData(csvFile : str, year : int, event : str):
     currentDF = pd.read_csv(csvFile)
-    
+    season.get(year)(currentDF, event)
+
+if __name__ == "__main__":
+    pass

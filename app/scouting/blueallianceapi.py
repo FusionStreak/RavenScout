@@ -22,10 +22,15 @@ matchTypes = {
 def bytes_to_dict(binary : bytes):
     return json.loads(binary.decode('utf-8'))
 
-def check_response(response):
-    pass
+def check_response(response : rq.Response):
+    """
+    Error check for HTTP errors when requesting TBA data
+    """
+    if (response.status_code is 200):
+        return True
+    return False
 
-def request_match(year : int, event : str, matchType : str, matchNum : int):
+def request_match(year : int, event : str, matchNum : int, matchType : str = 'qual'):
     """
     Requests data on a specific match through "The Blue Alliance" API
     https://www.thebluealliance.com/apidocs/v3
@@ -35,15 +40,42 @@ def request_match(year : int, event : str, matchType : str, matchNum : int):
 
     event (str) : event code. Ex: North Bay Ontario -> 'onnob'. Look at "The Blue Alliance" for event codes
 
+    matchNum (int) : match number, in terms of the match type.
+
     matchType (str) : match type. Ex: Qualifier -> 'qual', Quarter Final 2 -> 'quart2'.
 
-    matchNum (int) : match number, in terms of the match type.
+    return (dict) : full data on the match requested or False if an error occured
     """
     url = 'https://www.thebluealliance.com/api/v3/match/'
     url += str(year) + event.lower() + matchTypes[matchType] + str(matchNum)
     response = rq.get(url, params=parm)
-    return bytes_to_dict(response.content)
+    if check_response(response):
+        return bytes_to_dict(response.content)
+    return False;
 
+def get_robot_num(alliance : str, teamNum : int, matchObject : dict):
+    """
+
+
+    Parameters:
+    alliance (str) : either 'red' or 'blue'
+
+    teamNum (int) : team number
+
+    matchObject (dict) : the match data dict
+
+    return (str) : the corresponding robot in the match data
+    """
+    teamList = matchObject["alliances"][alliance.lower()]["team_keys"]
+    num = teamList.index('frc' + str(teamNum)) + 1
+    return 'Robot' + str(num)
+
+def get_alliance_score(alliance : str, matchObject : dict):
+    return matchObject["alliances"][alliance.lower()]["score"]
 
 if __name__ == "__main__":
-    print(request_match(2018, 'ONNON', 'qual', 3))
+    match = request_match(2019, 'ONNOB', 3)
+    robot = get_robot_num('blue', 4783, match)
+    score = get_alliance_score('blue', match)
+    print(robot)
+    print(score)
