@@ -10,7 +10,7 @@ season = {
     2020 : ir.generate_data
 }
 
-def parseData(csvFile : str, year : int, event : str):
+def parse_data(csvFile : str, year : int, event : str):
     currentDF = pd.read_csv(csvFile)
     season.get(year)(currentDF, event)
 

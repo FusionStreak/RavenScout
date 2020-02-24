@@ -35,7 +35,8 @@ def request_match(year : int, event : str, matchNum : int, matchType : str = 'qu
     Requests data on a specific match through "The Blue Alliance" API
     https://www.thebluealliance.com/apidocs/v3
     
-    Parameters:
+    Parameters: 
+    
     year (int) : the season of the match. Ex: Deep Space -> 2019, Infinite REcharge -> 2020
 
     event (str) : event code. Ex: North Bay Ontario -> 'onnob'. Look at "The Blue Alliance" for event codes
