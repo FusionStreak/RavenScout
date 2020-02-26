@@ -20,10 +20,69 @@ pointValues = {
     'level' : 15 # If the Shield Generator was level
 }
 
-def validate_record(scoutRecord : tuple, matchObject : dict):
+def validate_endgame(dataFrame : pd.DataFrame, scoutRecord : tuple, scoreBreakdown : dict, robotNum : str):
+    """
+    Validates the records endgame data
+
+    Paramaters:
+
+    dataFrame (pd.DataFrame) :
+
+    scoutRecord (tuple) :
+
+    scoreBreakdown (dict) :
+
+    robotNum (str) :
+    """
+    tba_endgame = scoreBreakdown['endgame' + robotNum]
+    if (tba_endgame is 'Park'):
+        if (scoutRecord.park is False):
+            dataFrame.at[scoutRecord.Index, 'park'] = True
+    if (tba_endgame is 'Hang'):
+        if (scoutRecord.climb is False):
+            dataFrame.at[scoutRecord.Index, 'climb'] = True
+    if (tba_endgame is 'None'):
+        if (scoutRecord.park is True):
+            dataFrame.at[scoutRecord.Index, 'park'] = False
+        if (scoutRecord.climb is True):
+            dataFrame.at[scoutRecord.Index, 'climb'] = False
+
+def validate_auto(dataFrame : pd.DataFrame, scoutRecord : tuple, scoreBreakdown : dict, robotNum : str):
+    """
+    Validates the records auto data
+
+    Paramaters:
+
+    dataFrame (pd.DataFrame) :
+
+    scoutRecord (tuple) :
+
+    scoreBreakdown (dict) :
+
+    robotNum (str) :
+    """
+    if (scoreBreakdown['initLine'  + robotNum] is 'Exited'):
+        if (scoutRecord.left_line is False):
+            dataFrame.at[scoutRecord.Index, 'left_line'] = True
+    if (scoreBreakdown['initLine'  + robotNum] is 'None'):
+        if (scoutRecord.left_line is True):
+            dataFrame.at[scoutRecord.Index, 'left_line'] = False
+
+def validate_record(dataFrame : pd.DataFrame, scoutRecord : tuple, matchObject : dict):
     """
     Validates a record from the data frame 
     """
+    refNum = tba.get_robot_num(scoutRecord.alliance, scoutRecord.team_num, matchObject)
+    allianceScoreBreakdown = matchObject['score_breakdown'][scoutRecord.alliance.lower()]
+    validate_endgame(dataFrame, scoutRecord, allianceScoreBreakdown, refNum)
+    pass
+
+def validate_file(dataFrame : pd.DataFrame, event : str):
+    for row in dataFrame.itertuples(name='Record'):
+        match = tba.request_match(2020, event, row.match)
+        if (match is False):
+            continue
+        validate_record(row, match)
     pass
 
 def calc_contributed(scoutRecord : tuple):
@@ -71,10 +130,9 @@ def generate_data(dataFrame : pd.DataFrame, event : str):
     dataFrame['team_score'] = pd.Series(index=dataFrame.index)
     dataFrame['contributed'] = pd.Series(index=dataFrame.index)
     for row in dataFrame.itertuples(name='Record'):
-        match= tba.request_match(2020, event, row.match)
+        match = tba.request_match(2020, event, row.match)
         if (match is False):
             continue
-        validate_record(row, match)
         allScore = tba.get_alliance_score(row.match, match)
         teamScore = calc_contributed(row)
         dataFrame.at[row.Index, 'alliance_score'] = allScore
