@@ -1,1 +1,2 @@
 FLASK_APP=ravenscout.py
+FLASK_CONFIG=default

@@ -1,5 +1,5 @@
 from datetime import datetime
-from app import db
+from ravenscout import db
 
 class Files(db.Model):
     id = db.Column(db.Integer, primary_key=True)
