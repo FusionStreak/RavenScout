@@ -52,7 +52,7 @@ def request_match(year : int, event : str, matchNum : int, matchType : str = 'qu
     response = rq.get(url, params=parm)
     if check_response(response):
         return bytes_to_dict(response.content)
-    return False;
+    return False
 
 def get_robot_num(alliance : str, teamNum : int, matchObject : dict):
     """
