@@ -1,28 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-
-        <!--META tags-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrinktofit=no">
-        <!-- Bootstrap CSS-->
-        <link 
-            rel="stylesheet" 
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-            crossorigin="anonymous"
-        >
-        <link rel="stylesheet" href="/app/templates/scss/output.css">
         {% if title %}
-        <title>{{ title }} - RavenScout</title>
+        <title>{{ title }} - Microblog</title>
         {% else %}
-        <title>Welcome to RavenScout</title>
+        <title>Welcome to Microblog</title>
         {% endif %}
     </head>
     <body>
-        <div>RavenScout: 
-            <a href="/index">Home</a>
-            <a href='/submit'>Submit file</a>
+        <div>
+            Microblog:
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('login') }}">Login</a>
         </div>
         <hr>
         {% with messages = get_flashed_messages() %}
@@ -35,10 +23,5 @@
         {% endif %}
         {% endwith %}
         {% block content %}{% endblock %}
-
-        <!-- jQuery, Popperjs, Bootstrap JS-->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>
