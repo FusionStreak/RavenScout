@@ -74,9 +74,11 @@ def get_robot_num(alliance : str, teamNum : int, matchObject : dict):
 def get_alliance_score(alliance : str, matchObject : dict):
     return matchObject["alliances"][alliance.lower()]["score"]
 
+def get_alliance_foul_points(alliance : str, matchObject : dict):
+    if alliance.lower() is 'blue':
+        return matchObject["score_breakdown"]["red"]["foulPoints"]
+    else:
+        return matchObject["score_breakdown"]["blue"]["foulPoints"]
+
 if __name__ == "__main__":
-    match = request_match(2019, 'ONNOB', 3)
-    robot = get_robot_num('blue', 4783, match)
-    score = get_alliance_score('blue', match)
-    print(robot)
-    print(score)
+    pass

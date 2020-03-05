@@ -1,0 +1,71 @@
+Team Number,Match Number,Scout,Broken?,Did robot tip?,Travel through trench,Power Cell Capacity,Can pickup PC from floor?,Penalty,Cells dropped,Park Time,Climb Time,Rotation Time,Position Time,Crossed line,Field Position,Rotation CP?,Position CP?,Can it climb?,Hanging Mobility,Balance,Assist,Low Auto,High Auto,Missed Auto,Low Tele,High Tele,Missed Tele,Blocked Tele,Ground Pickup,Loading Pickup
+7721,2,Edward_W,FALSE,FALSE,FALSE,0,FALSE,0,0,0,0,0,0,No,Blue 1,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+6987,3,Edward_W,FALSE,FALSE,FALSE,0,FALSE,0,0,0,0,0,0,No,Red 1,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+6140,4,Edward_W,FALSE,FALSE,FALSE,0,TRUE,0,2,0,0,0,0,No,Blue 1,No,No,No,No,No,No,0,0,0,1,0,0,0,0,0
+7564,5,Edward_W,FALSE,FALSE,FALSE,3,TRUE,0,2,4.377,0,0,0,No,Red 2,Not Observed,Not Observed,No,No,No,No,0,0,0,0,0,0,0,0,3
+6514,6,Enter Name,FALSE,FALSE,FALSE,3,TRUE,0,0,3.111,0,0,0,Yes,Blue 2,Not Observed,Not Observed,No,No,No,No,0,0,0,1,0,0,0,0,0
+5036,7,Edward_W,FALSE,FALSE,TRUE,3,TRUE,0,2,2.322,0,0,0,Yes,Blue 2,Not Observed,Not Observed,No,No,No,No,0,0,0,0,0,0,0,1,2
+2200,8,Edward_W,FALSE,FALSE,TRUE,3,TRUE,0,4,0,2.29,0,0,Yes,Blue 2,Not Observed,Not Observed,Yes,No,Yes,No,0,2,1,2,0,0,0,4,0
+1374,1,Enter Name,FALSE,FALSE,FALSE,3,TRUE,0,3,0,0,0,0,No,Blue 1,Not Observed,Not Observed,No,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+1374,9,Edward_W,FALSE,FALSE,FALSE,0,FALSE,0,0,0,0,0,0,Yes,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+610,2,Enter Name,FALSE,FALSE,FALSE,4,TRUE,0,4,0,4.586,0,0,Not Observed,Red 3,Not Observed,Not Observed,Yes,Not Observed,Yes,Not Observed,0,2,0,0,0,0,0,0,0
+4946,10,Edward_W,FALSE,FALSE,TRUE,4,TRUE,0,0,5.046,9.22,0,0,Yes,Blue 1,Not Observed,Not Observed,Yes,No,Yes,No,0,0,0,1,2,2,0,0,3
+8072,3,Enter Name,FALSE,FALSE,FALSE,3,TRUE,0,0,0,27.871,0,0,No,Blue 2,Not Observed,Not Observed,Yes,No,Not Observed,Not Observed,0,4,1,0,0,0,0,0,0
+7480,11,Edward_W,FALSE,FALSE,TRUE,4,TRUE,0,0,0,8.993,0,0,Yes,Red 3,Not Observed,Not Observed,No,No,No,No,0,0,1,0,3,0,0,0,0
+5036,4,Enter Name,FALSE,FALSE,FALSE,3,FALSE,0,1,0,0,0,0,Not Observed,Blue 3,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+6135,12,Edward_W,FALSE,FALSE,FALSE,0,FALSE,0,0,0,0,0,0,Yes,Blue 2,Not Observed,Not Observed,No,No,No,No,0,0,0,0,0,0,0,0,0
+6987,13,Enter Name,FALSE,FALSE,TRUE,2,TRUE,0,2,0,0,0,0,Not Observed,Blue 1,Not Observed,Not Observed,No,No,No,No,0,0,0,0,0,2,0,0,0
+4476,5,Enter Name,FALSE,FALSE,TRUE,5,TRUE,0,0,2.264,0,0,0,Yes,Blue 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,4,1,0,10,5,0,0,0
+6110,1,Enter Name,FALSE,FALSE,FALSE,0,TRUE,0,4,0,5.483,0,0,Yes,Blue 2,Not Observed,Not Observed,Yes,Not Observed,Not Observed,Not Observed,0,2,0,0,0,0,5,10,0
+4907,2,Enter Name,FALSE,FALSE,TRUE,0,TRUE,0,0,0,13.298,0,0,Not Observed,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+2994,3,Enter Name,FALSE,FALSE,FALSE,0,TRUE,0,2,12.524,0,0,0,Yes,Red 2,Not Observed,Not Observed,No,Not Observed,Not Observed,Not Observed,0,0,0,0,3,2,0,0,0
+7735,6,Enter Name,FALSE,FALSE,FALSE,5,TRUE,0,3,0,0,0,0,No,Blue 1,Not Observed,Not Observed,Yes,Not Observed,Not Observed,Not Observed,0,0,0,3,0,0,0,0,0
+188,4,Enter Name,FALSE,FALSE,TRUE,0,TRUE,0,3,0,2.59,0,0,Not Observed,Red 3,Not Observed,Not Observed,Yes,Not Observed,Not Observed,Not Observed,0,3,0,3,5,1,0,0,0
+5885,7,Enter Name,FALSE,FALSE,FALSE,4,TRUE,0,0,0,21.557,0,0,Yes,Blue 3,Not Observed,Not Observed,Yes,Not Observed,Yes,Not Observed,0,2,2,0,5,3,0,0,0
+7614,5,Enter Name,FALSE,FALSE,FALSE,5,TRUE,0,6,0,0,0,0,No,Blue 3,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,6,4
+3739,8,Enter Name,FALSE,FALSE,FALSE,3,FALSE,0,0,2.606,0,0,0,Not Observed,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+6875,6,Enter Name,FALSE,FALSE,TRUE,0,TRUE,0,0,0,0,0,0,Yes,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,4,0,2,0,0,0
+4907,9,Enter Name,FALSE,FALSE,FALSE,0,FALSE,0,0,0,0,0,0,Not Observed,Red 3,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+8072,7,Enter Name,FALSE,FALSE,FALSE,0,FALSE,0,0,5,19,0,0,Not Observed,Blue 1,Not Observed,Not Observed,Yes,Not Observed,No,Not Observed,0,1,1,0,0,0,0,0,0
+4476,11,Enter Name,FALSE,FALSE,FALSE,0,TRUE,0,0,2.202,0,0,0,Yes,Blue 1,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,5,1,0,0,0
+7564,8,Enter Name,FALSE,FALSE,FALSE,0,FALSE,0,0,0,0,0,0,Not Observed,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+6140,12,Enter Name,FALSE,FALSE,FALSE,4,TRUE,0,0,0,12.998,0,0,No,Blue 1,Not Observed,Not Observed,Yes,Not Observed,Not Observed,Not Observed,0,0,0,2,0,0,0,0,0
+7902,9,Enter Name,FALSE,FALSE,FALSE,0,FALSE,0,0,0,0,0,0,Not Observed,Blue 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+8072,13,Enter Name,FALSE,FALSE,FALSE,1,TRUE,0,1,0,6.049,0,0,No,Blue 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+6110,10,Enter Name,FALSE,FALSE,TRUE,0,TRUE,0,0,0,24.283,0,0,Yes,Red 1,Not Observed,Not Observed,Yes,Not Observed,Not Observed,Not Observed,0,3,0,0,3,3,0,0,0
+610,11,Enter Name,FALSE,FALSE,FALSE,0,FALSE,0,0,0,9.223,0,0,Yes,Red 1,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,6,0,0,11,0,0,0,0
+6110,14,Enter Name,FALSE,FALSE,FALSE,3,FALSE,0,0,0,0,0,0,Yes,Blue 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+2994,12,Enter Name,FALSE,FALSE,TRUE,0,TRUE,0,0,0,0,0,0,No,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,3,0,0,5,2,0,0,0
+6514,11,Enter Name,FALSE,FALSE,FALSE,0,FALSE,0,0,10.455,0,0,0,Not Observed,Blue 2,Not Observed,Not Observed,No,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+188,12,Enter Name,FALSE,FALSE,TRUE,0,TRUE,0,4,0,22.538,0,0,Yes,Red 1,Not Observed,Not Observed,Yes,Not Observed,Not Observed,Not Observed,0,3,0,0,9,6,0,0,0
+7564,13,Enter Name,FALSE,FALSE,FALSE,0,TRUE,0,2,20.611,0,0,0,Yes,Red 1,Not Observed,Not Observed,No,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,2,0,0
+6323,20,Edward_W,FALSE,FALSE,FALSE,2,TRUE,0,0,0,0,0,0,No,Blue 3,Not Observed,Not Observed,No,No,No,No,0,0,0,0,0,0,0,1,0
+4476,21,Edward_W,FALSE,FALSE,FALSE,4,TRUE,0,0,1.387,0,0,0,No,Red 1,Not Observed,Not Observed,No,No,No,No,0,0,0,0,5,3,0,3,1
+2994,22,Edward_W,FALSE,FALSE,TRUE,3,TRUE,0,0,0,0,0,0,Yes,Red 1,Not Observed,Not Observed,No,No,No,No,0,2,1,0,4,4,0,3,0
+188,23,Edward_W,FALSE,FALSE,TRUE,4,TRUE,0,0,0,2.486,0,0,Yes,Blue 2,Not Observed,Not Observed,Yes,No,No,No,0,8,0,0,6,6,0,0,0
+6135,24,Edward_W,FALSE,FALSE,FALSE,0,FALSE,0,0,0,2.489,0,0,Yes,Blue 1,Not Observed,Not Observed,Yes,No,Yes,No,0,0,0,0,0,0,0,0,0
+7564,25,Enter Name,FALSE,FALSE,TRUE,0,FALSE,0,0,0,0,0,0,Yes,Red 2,Not Observed,Not Observed,No,No,No,No,0,0,0,0,0,0,0,0,0
+7480,27,Edward_W,FALSE,FALSE,FALSE,3,TRUE,0,0,3.543,0,0,0,Yes,Blue 2,Not Observed,Not Observed,No,No,No,No,0,2,0,0,1,0,0,0,0
+5036,28,Edward_W,FALSE,FALSE,TRUE,3,TRUE,0,0,1.266,0,0,0,Yes,Blue 1,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,2,0,0,0
+2994,29,Enter Name,FALSE,FALSE,TRUE,4,TRUE,0,0,0,0,0,0,Yes,Blue 3,Not Observed,Not Observed,Yes,No,Yes,No,0,0,0,0,5,0,0,0,0
+6135,30,Edward_W,FALSE,FALSE,FALSE,0,FALSE,0,0,0,5.298,0,0,Yes,Red 2,Not Observed,Not Observed,Yes,No,Yes,No,0,0,0,0,0,0,0,0,0
+6514,16,Enter Name,FALSE,FALSE,FALSE,3,TRUE,0,0,0,0,0,0,Yes,Red 1,Not Observed,Not Observed,No,No,No,No,0,0,0,5,0,0,0,0,0
+6135,17,Enter Name,FALSE,FALSE,FALSE,0,FALSE,0,0,0,4.359,0,0,Yes,Red 2,Not Observed,Not Observed,Yes,No,No,No,0,0,0,0,0,0,0,0,0
+7902,18,Enter Name,FALSE,FALSE,TRUE,3,TRUE,0,3,0,0,0,0,Yes,Red 2,Not Observed,Not Observed,No,No,No,No,0,0,0,0,1,2,0,0,0
+6867,19,Enter Name,FALSE,FALSE,FALSE,0,FALSE,0,0,0,0,0,0,Not Observed,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,1,0,0,0,0,0,0,0
+4907,20,Enter Name,FALSE,FALSE,TRUE,2,TRUE,0,0,0,2,0,0,Yes,Red 1,Not Observed,Not Observed,Yes,Not Observed,Not Observed,Not Observed,0,3,0,0,4,3,0,0,0
+6110,21,Enter Name,FALSE,FALSE,FALSE,4,TRUE,0,0,3,20,0,0,Yes,Blue 3,Not Observed,Not Observed,Yes,No,No,Not Observed,0,3,0,0,1,2,0,0,0
+4946,22,Enter Name,FALSE,FALSE,FALSE,0,FALSE,0,0,0,14,0,0,Yes,Red 2,Not Observed,Not Observed,Yes,No,No,No,0,0,0,0,12,5,0,0,0
+7480,23,Enter Name,FALSE,FALSE,TRUE,0,TRUE,0,0,0.373,0,0,0,Yes,Red 1,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,3,0,0,9,2,0,0,0
+2200,24,Enter Name,FALSE,FALSE,TRUE,5,TRUE,0,0,0,5.983,0,0,Yes,Red 1,Not Observed,Not Observed,Yes,Not Observed,Yes,Not Observed,0,5,1,0,15,1,0,0,0
+8072,25,Enter Name,FALSE,FALSE,FALSE,3,FALSE,0,0,0,0,0,0,Yes,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+6987,27,Enter Name,FALSE,FALSE,FALSE,3,TRUE,0,0,0,0,0,0,Not Observed,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,1,6,0,0,0
+4976,28,Enter Name,FALSE,FALSE,FALSE,4,TRUE,0,0,0,2.437,0,0,Not Observed,Red 1,Not Observed,Not Observed,Not Observed,Not Observed,Yes,Not Observed,0,1,4,0,8,8,0,0,0
+6110,29,Enter Name,FALSE,FALSE,TRUE,3,TRUE,0,0,0,0,0,0,Yes,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,1,6,0,0,0
+6514,30,Enter Name,FALSE,FALSE,FALSE,0,TRUE,0,0,0,0,0,0,Yes,Red 2,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,2,0,1,0,0,0
+7614,18,Enter Name,FALSE,FALSE,TRUE,4,TRUE,0,0,1.238,0,0,0,Not Observed,Red 1,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,2,0,1,0,0,0
+2994,17,Enter Name,FALSE,FALSE,TRUE,5,TRUE,0,0,0,0,0,0,Yes,Red 1,Not Observed,Not Observed,Yes,Not Observed,Not Observed,Not Observed,0,3,0,0,4,6,0,10,0
+6140,18,Enter Name,FALSE,FALSE,TRUE,3,FALSE,0,0,0,0,0,0,Not Observed,Blue 3,Not Observed,Not Observed,Yes,No,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+8072,19,Enter Name,FALSE,FALSE,TRUE,0,FALSE,0,2,0,0,0,0,Not Observed,Red 2,Not Observed,Not Observed,No,Not Observed,Not Observed,Not Observed,0,0,1,0,0,1,0,0,0
+7564,20,Enter Name,FALSE,FALSE,TRUE,3,FALSE,0,0,0,0,0,0,Not Observed,Red 1,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,Not Observed,0,0,0,0,0,0,0,0,0
+610,22,Enter Name,FALSE,FALSE,FALSE,5,TRUE,0,0,0,11.461,0,0,Not Observed,Red 3,Not Observed,Not Observed,Yes,Not Observed,Not Observed,Not Observed,0,3,3,0,8,2,0,0,0

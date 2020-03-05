@@ -2,11 +2,9 @@
 
 import pandas as pd
 import numpy as np
-import deepspace as ds
 import infiniterecharge as ir
 
 season = {
-    2019 : ds.generate_data,
     2020 : ir.generate_data
 }
 
