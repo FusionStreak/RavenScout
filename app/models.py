@@ -1,37 +1,28 @@
+from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
 from app import db
 
-class Files(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    date = db.Column(db.Date, index=True, default=datetime.utcnow)
-    fileName = db.Column(db.String(64), index=True, unique=True)
-    event = db.Column(db.String(6), index=True, unique=False)
-    team = db.Column(db.Integer, index=True, unique=False)
-    name = db.Column(db.String(64), index=True, unique= False)
-    season = db.Column(db.Integer)
-    
-    def __repr__(self):
-        return '<File {}>'.format(self.fileName)
 
-class infiniteRechargeParsedData(db.Model):
+class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    file_id = db.Column(db.Integer, db.ForeignKey('files.id'))
-    file_event = db.Column(db.String(6), db.ForeignKey('files.event'))
-    match = db.Column(db.Integer) # Match Number
-    alliance = db.Column(db.Boolean) # Alliance, blue is True, red is False
-    team = db.Column(db.Integer) # Team number
-    driverPos = db.Column(db.Integer) # Driver Position, pulled from FMS
-    leftLine = db.Column(db.Boolean) # Left Auto line, pulled from FMS
-    autoHigh = db.Column(db.Integer) # How many balls in high goal in auto
-    autoMid = db.Column(db.Integer) # How many balls in mid goal in auto
-    autoLow = db.Column(db.Integer) # How many balls in low goal in auto
-    teleHigh = db.Column(db.Integer) # How many balls in high goal in teleop
-    teleMid = db.Column(db.Integer) # How many balls in mid goal in teleop
-    teleLow = db.Column(db.Integer) # How many balls in low goal in teleop
-    rotateCP = db.Column(db.Boolean) # If they rotated the Control Panel 3-5 times
-    positionCP = db.Column(db.Boolean) # If they positioned the Control Panel under right colour
-    matchScore = db.Column(db.Integer) # Moatch final score, pulled from FMS
-    scoreContributed = db.Column(db.Integer) # Amount of points made by team, calculated
+    username = db.Column(db.String(64), index=True, unique=True)
+    email = db.Column(db.String(120), index=True, unique=True)
+    password_hash = db.Column(db.String(128))
+    posts = db.relationship('Post', backref='author', lazy='dynamic')
 
     def __repr__(self):
-        return '<InfiniteRechargeData {}>'.format(self.id)
+        return '<User {}>'.format(self.username)
+    def set_password(self,password):
+        self.password_hash = generate_password_hash(password)
+    def check_password(self,password):
+        return check_password_hash(self.password_hash,password)
+
+
+class Post(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    body = db.Column(db.String(140))
+    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+
+    def __repr__(self):
+        return '<Post {}>'.format(self.body)
