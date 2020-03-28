@@ -13,12 +13,13 @@
 * Generate visuals
 * Advanced Calculations
 * Pull data from FMS/TheBlueAlliance
+* Make form that receives csv file, put in database, validate from TBA(categories we can), show on website in visualization
 
 ## How to Develop
 * Clone the repo
 * Requirements:
     * NodeJS
-    * Python 3.7+
+    * Python 3.7+ (add to "PATH")
     * pip
 * Run `$ sh requirements.sh` to install pip and npm requirements for development
 * Run `$ flask` to show run/development options
