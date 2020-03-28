@@ -36,3 +36,4 @@ jinja2.exceptions.UndefinedError: there is no parent block called 'scripts'.
 2020-03-27 01:01:41,534 INFO: Microblog startup [in C:\Users\Daniel\microblog\app\__init__.py:51]
 2020-03-27 16:46:20,194 INFO: Microblog startup [in C:\Users\Daniel\microblog\app\__init__.py:51]
 2020-03-27 19:10:16,970 INFO: Microblog startup [in C:\Users\Daniel\microblog\app\__init__.py:51]
+2020-03-27 20:43:17,475 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
