@@ -3,3 +3,10 @@
 2020-04-17 15:01:12,703 INFO: RavenScout startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
 2020-04-17 15:10:04,193 INFO: RavenScout startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
 2020-04-17 15:13:11,660 INFO: RavenScout startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+<<<<<<< HEAD
+2020-04-17 16:08:48,991 INFO: RavenScout startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 16:13:19,648 INFO: RavenScout startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 16:29:48,646 INFO: RavenScout startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+=======
+2020-04-17 16:27:06,027 INFO: RavenScout startup [in D:\Code\RavenScout\app\__init__.py:51]
+>>>>>>> c6ad8d136353eaf3aa07bb3850232f61fabc09b5
