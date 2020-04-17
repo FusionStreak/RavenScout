@@ -104,8 +104,9 @@ Traceback (most recent call last):
   File "c:\users\daniel\appdata\local\programs\python\python38-32\lib\site-packages\werkzeug\routing.py", line 2179, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'img' with values ['filename']. Did you mean 'home' instead?
-2020-04-17 02:46:58,039 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
-2020-04-17 02:47:36,705 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
-2020-04-17 02:48:33,415 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
-2020-04-17 14:43:15,399 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
-2020-04-17 14:43:57,353 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 02:46:58,039 INFO:  startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 02:47:36,705 INFO:  startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 02:48:33,415 INFO:  startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 14:43:15,399 INFO:  startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 14:43:57,353 INFO:  startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 14:47:18,328 INFO:  startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
