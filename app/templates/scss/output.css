@@ -27,7 +27,7 @@ body {
   background-color: #000;
 }
 
-[tabindex="-1"]:focus:not(:focus-visible) {
+[tabhome="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
 
