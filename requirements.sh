@@ -9,4 +9,8 @@ npm install jquery
 npm install @popperjs/core
 pip install flask-mail
 pip install flask-login
-pip install jwt
+pip install pyjwt
+pip install python-dotenv
+pip install flask-migrate
+pip install flask-bootstrap 
+pip install flask-moment
