@@ -5,6 +5,7 @@ __pycache__/config.cpython-37.pyc
 venv
 node_modules
 migrations
+logs
 *.pyc
 *.map
 *.flow
