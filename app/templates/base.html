@@ -7,8 +7,11 @@
 {% block scripts %}
     {{ super() }}
     {{ moment.include_moment() }}
-    <link rel="stylesheet" href="./css/ravenscout-style.css">
 {% endblock %} 
+
+{% block styles %}
+    <link rel="stylesheet" href="./css/ravenscout-style.css">
+{% endblock styles %}
 
 
 {% block navbar %}
