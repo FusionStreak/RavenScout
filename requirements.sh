@@ -4,9 +4,6 @@ pip install flask-sqlalchemy
 pip install pandas
 pip install numpy
 pip install requests
-npm install bootstrap
-npm install jquery
-npm install @popperjs/core
 pip install flask-mail
 pip install flask-login
 pip install pyjwt
