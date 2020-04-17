@@ -126,3 +126,5 @@ jinja2.exceptions.TemplateNotFound: RavenScout.html
 2020-04-17 00:08:33,597 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
 2020-04-17 00:10:25,427 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
 2020-04-17 00:11:15,122 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 00:16:56,213 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 00:25:57,361 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
