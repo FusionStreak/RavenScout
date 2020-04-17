@@ -141,7 +141,7 @@ def events():
         if posts.has_next else None
     prev_url = url_for('events', page=posts.prev_num) \
         if posts.has_prev else None
-    return render_template("home.html", title='events', posts=posts.items,
+    return render_template("home.html", title='Events', posts=posts.items,
                           next_url=next_url, prev_url=prev_url)
 
 @app.route('/reset_password_request', methods=['GET', 'POST'])
@@ -172,3 +172,7 @@ def reset_password(token):
         flash('Your password has been reset.')
         return redirect(url_for('login'))
     return render_template('reset_password.html', form=form)
+
+@app.route('/RavenScout', methods=['GET', 'POST']) 
+def RavenScout():
+    return render_template('RavenScout.html', title='RavenScout')
