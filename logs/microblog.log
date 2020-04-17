@@ -1,21 +1,30 @@
-2020-03-27 00:58:12,935 ERROR: Exception on / [GET] [in c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py:1890]
+2020-04-16 23:48:07,241 ERROR: Exception on /favicon.ico [GET] [in c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 1925, in dispatch_request
+    self.raise_routing_exception(req)
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 1907, in raise_routing_exception
+    raise request.routing_exception
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "c:\users\daniel\microblog\venv\lib\site-packages\werkzeug\routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
   File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "c:\users\daniel\microblog\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "C:\Users\Daniel\microblog\app\routes.py", line 28, in index
-    return render_template('index.html', title='Home', form=form,
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 1815, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 1743, in handle_http_exception
+    return handler(e)
+  File "C:\Users\Daniel\Documents\GitHub\RavenScout\app\errors.py", line 6, in not_found_error
+    return render_template('404.html'), 404
   File "c:\users\daniel\microblog\venv\lib\site-packages\flask\templating.py", line 137, in render_template
     return _render(
   File "c:\users\daniel\microblog\venv\lib\site-packages\flask\templating.py", line 120, in _render
@@ -26,14 +35,27 @@ Traceback (most recent call last):
     reraise(*rewrite_traceback_stack(source=source))
   File "c:\users\daniel\microblog\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
-  File "C:\Users\Daniel\microblog\app\templates\index.html", line 2, in top-level template code
-    {% import 'bootstrap/wtf.html' as wtf %}
-  File "C:\Users\Daniel\microblog\app\templates\base.html", line 1, in top-level template code
+  File "C:\Users\Daniel\Documents\GitHub\RavenScout\app\templates\404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Daniel\Documents\GitHub\RavenScout\app\templates\base.html", line 1, in top-level template code
     {% extends 'bootstrap/base.html' %}
-  File "C:\Users\Daniel\microblog\app\templates\base.html", line 2, in block "scripts"
-jinja2.exceptions.UndefinedError: there is no parent block called 'scripts'.
-2020-03-27 00:58:18,575 INFO: Microblog startup [in C:\Users\Daniel\microblog\app\__init__.py:51]
-2020-03-27 01:01:41,534 INFO: Microblog startup [in C:\Users\Daniel\microblog\app\__init__.py:51]
-2020-03-27 16:46:20,194 INFO: Microblog startup [in C:\Users\Daniel\microblog\app\__init__.py:51]
-2020-03-27 19:10:16,970 INFO: Microblog startup [in C:\Users\Daniel\microblog\app\__init__.py:51]
-2020-03-27 20:43:17,475 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 3, in block "doc"
+    <html{% block html_attribs %}{% endblock html_attribs %}>
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 11, in block "html"
+    {%- endblock metas %}
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 12, in block "body"
+  File "C:\Users\Daniel\Documents\GitHub\RavenScout\app\templates\base.html", line 29, in block "navbar"
+    <li><a href="{{ url_for('teams') }}">Teams</a></li>
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\app.py", line 2215, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\daniel\microblog\venv\lib\site-packages\flask\helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "c:\users\daniel\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'teams'. Did you mean 'events' instead?
