@@ -124,3 +124,5 @@ Traceback (most recent call last):
     raise TemplateNotFound(template)
 jinja2.exceptions.TemplateNotFound: RavenScout.html
 2020-04-17 00:08:33,597 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 00:10:25,427 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-17 00:11:15,122 INFO: Microblog startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
