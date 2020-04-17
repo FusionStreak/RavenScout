@@ -175,4 +175,4 @@ def reset_password(token):
 
 @app.route('/RavenScout', methods=['GET', 'POST']) 
 def RavenScout():
-    return render_template('RavenScout.html', title='RavenScout')
+    return render_template('RavenScout.html', title='About')
