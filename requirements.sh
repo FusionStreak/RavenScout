@@ -7,3 +7,6 @@ pip install requests
 npm install bootstrap
 npm install jquery
 npm install @popperjs/core
+pip install flask-mail
+pip install flask-login
+pip install jwt
