@@ -1,1 +1,1 @@
-web: gunicorn --bind=0.0.0.0 --timeout 600 ravenscout:app
+web: gunicorn ravenscout:app
