@@ -4,7 +4,6 @@ __pycache__/app.cpython-37.pyc
 __pycache__/config.cpython-37.pyc
 venv
 node_modules
-migrations
 logs
 *.pyc
 *.map

@@ -54,3 +54,6 @@ Traceback (most recent call last):
 werkzeug.routing.BuildError: Could not build url for endpoint 'teams'. Did you mean 'latest' instead?
 2020-04-18 16:51:14,393 INFO: RavenScout startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
 2020-04-18 17:02:23,423 INFO: RavenScout startup [in C:\Users\Daniel\Documents\GitHub\RavenScout\app\__init__.py:51]
+2020-04-19 18:31:41,829 INFO: RavenScout startup [in D:\Code\RavenScout\app\__init__.py:51]
+2020-04-19 18:31:52,982 INFO: RavenScout startup [in D:\Code\RavenScout\app\__init__.py:51]
+2020-04-19 18:33:36,241 INFO: RavenScout startup [in D:\Code\RavenScout\app\__init__.py:51]
