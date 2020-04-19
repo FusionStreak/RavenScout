@@ -11,3 +11,4 @@ pip install python-dotenv
 pip install flask-migrate
 pip install flask-bootstrap 
 pip install flask-moment
+pip install flask-uploads
