@@ -1,2 +1,2 @@
-FLASK_APP=RavenScout.py
+FLASK_APP=ravenscout.py
 FLASK_ENV=production
