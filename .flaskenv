@@ -1,1 +1,2 @@
 FLASK_APP=RavenScout.py
+FLASK_ENV=development

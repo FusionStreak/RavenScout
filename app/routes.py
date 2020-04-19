@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect, url_for, request
+from flask import render_template, flash, redirect, url_for, request, Flask
 from app import app, db
 from app.forms import LoginForm, RegistrationForm, EditProfileForm, PostForm, ResetPasswordRequestForm, ResetPasswordForm  
 from flask_login import current_user, login_user, logout_user, login_required
@@ -131,17 +131,16 @@ def unfollow(username):
     flash(f'You are not following {username}.')
     return redirect(url_for('user', username=username)) 
 
-@app.route('/events')                                 
-@login_required
-def events():
+@app.route('/latest')                                 
+def latest():
     page = request.args.get('page', 1, type=int)
     posts = Post.query.order_by(Post.timestamp.desc()).paginate(
         page, app.config['POSTS_PER_PAGE'], False)
-    next_url = url_for('events', page=posts.next_num) \
+    next_url = url_for('latest', page=posts.next_num) \
         if posts.has_next else None
-    prev_url = url_for('events', page=posts.prev_num) \
+    prev_url = url_for('latest', page=posts.prev_num) \
         if posts.has_prev else None
-    return render_template("home.html", title='Events |', posts=posts.items,
+    return render_template("home.html", title='Latest |', posts=posts.items,
                           next_url=next_url, prev_url=prev_url)
 
 @app.route('/reset_password_request', methods=['GET', 'POST'])
