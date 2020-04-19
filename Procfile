@@ -1,1 +1,1 @@
-web: gunicorn RavenScout:app
+web: gunicorn ravenscout:app
