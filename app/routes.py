@@ -172,6 +172,6 @@ def reset_password(token):
         return redirect(url_for('login'))
     return render_template('reset_password.html', form=form)
 
-@app.route('/RavenScout', methods=['GET', 'POST']) 
-def RavenScout():
+@app.route('/ravenscout', methods=['GET', 'POST']) 
+def ravenscout():
     return render_template('about-ravenscout.html', title='About')
